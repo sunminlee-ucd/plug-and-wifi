@@ -1,19 +1,52 @@
 # Plug & Wifi
 
+> **UCD MSc Computer Science Research Practicum — collaborative team project.**
+> This repository is a personal portfolio mirror of the [original team repository](https://github.com/Research-Practicum-Group-4/plugandwifi), not a solo-authored project. Original commit authorship and team contributions are preserved.
+
+## Portfolio Overview
+
+**Plug & Wifi** helps people discover and book work-friendly venues based on Wi-Fi, plug availability, quietness, location, amenities, and availability. The project combines a React web app, a React Native mobile prototype, a FastAPI backend, and data/ML workflows.
+
+- **My role:** Backend Developer — Python/FastAPI APIs, PostgreSQL/SQLAlchemy, authentication, booking workflows, search, and integrations.
+- **Team stack:** FastAPI, SQLAlchemy, Pydantic, PostgreSQL, React, TypeScript, React Native, Docker, Google Cloud, and Python ML tooling.
+- **Verified contribution record:** [54 original PRs authored by `sunminlee-ucd`, 50 merged](https://github.com/sunminlee-ucd/plug-and-wifi/issues/1) (reviewed 21 October 2026).
+- **Project status:** Research practicum portfolio archive. See the original README's historical demo URL below; live hosting is not guaranteed.
+
+### Selected backend work (linked to original team PRs)
+
+| Area | Implementation | Evidence |
+| --- | --- | --- |
+| Authentication & security | OAuth2/JWT authentication, rotating refresh tokens, session revocation and role-based access control | [#32](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/32), [#56](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/56), [#59](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/59) |
+| Booking integrity | Concurrent seat-capacity checks with database row locking, booking cancellation and availability APIs | [#57](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/57), [#55](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/55), [#76](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/76) |
+| Venue discovery | Geospatial sorting, search filters and availability-aware discovery | [#43](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/43), [#99](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/99) |
+| Recommendations | Weighted suitability scoring and zone-busyness model integration in venue APIs | [#85](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/85), [#95](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/95) |
+| Provider/admin & AI integrations | Provider KPI endpoint, admin overview, Gemini backend and venue-aware chatbot search | [#61](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/61), [#67](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/67), [#80](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/80), [#98](https://github.com/Research-Practicum-Group-4/plugandwifi/pull/98) |
+
+### Contribution & project links
+
+- [Original team repository and pull request discussions](https://github.com/Research-Practicum-Group-4/plugandwifi)
+- [All 142 original PRs, with original authors and links](https://github.com/sunminlee-ucd/plug-and-wifi/issues/1)
+- [Detailed backend contribution and CV reference](https://github.com/sunminlee-ucd/plug-and-wifi/issues/2)
+- [Backend setup](backend/README.md) · [Web setup](frontend-web/README.md) · [Mobile setup](frontend-mobile/README.md)
+
+---
+
+## Original Project Documentation
 Plug & Wifi is a monorepo for a flexible workspace discovery and booking
 platform. The project combines a React web app, a React Native mobile prototype,
 a FastAPI backend, and data/ML workflows for venue scoring and busyness-aware
 recommendations.
 
-This repository is an active research-practicum project workspace. The web and
+This codebase originated as a team research-practicum project workspace. The web and
 backend services are the most complete development targets; the mobile and
 data/ML directories support prototype, experimentation, and integration work.
 
 ## Production URL
 
-Production site: https://plugandwifi.xyz/
+Historical production URL: https://plugandwifi.xyz/
 
-This URL is valid until 25 August 2026.
+The original deployment URL was stated to be valid only until **25 August 2026**;
+it should not be assumed to be a currently available live demo.
 
 ## Current Scope
 
